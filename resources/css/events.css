@@ -1,0 +1,215 @@
+/* Global Properties */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'MerriweatherSans', Arial, Helvetica, sans-serif;
+}
+
+#mf {
+    font-family: 'Highlander';
+    text-transform: uppercase;
+    color: crimson;
+}
+
+#center {
+    text-align: center;
+}
+
+.divider {
+    margin: 1rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width: 100%;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: black;
+}
+
+header .logo{
+    color: crimson;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    flex: 1;
+}
+
+header nav {
+    color: white;
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+header nav li {
+    padding-left: 5rem;
+}
+
+header a {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+header nav a:link {
+    color: white;
+}
+
+header nav a:visited {
+    color: white;
+}
+
+header nav a:hover {
+    cursor: pointer;
+    color: rgb(232, 39, 97);
+}
+
+header nav a:active {
+    font-size: 0.95rem;
+    color: rgb(232, 39, 97);
+    text-shadow: 1px 1px 3px white;
+}
+
+header .mobile {
+    display: none;
+}
+
+/* Events Section */
+.events {
+    display: block;
+    margin: 5.5rem auto;
+    max-width: 85%;
+    height: fit-content;
+}
+
+.events h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'MerriweatherSans-Bold', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.events h4 {
+    margin-top: 0;
+}
+
+.events .fire-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.3rem;
+}
+
+.events .container {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/event-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .9rem;
+    box-shadow: 0 0 1rem rgb(232, 39, 97);
+    padding: 2.5rem 3rem 3.5rem 3rem;
+}
+
+.events table {
+    padding: .5rem 1rem;
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+.events th {
+    font-family: 'MerriweatherSans-Light', Arial, Helvetica, sans-serif;
+    border: 1px solid whitesmoke;
+}
+
+.events td {
+    font-family: 'MerriweatherSans-Light', Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    line-height: 1.5;
+    border: 1px solid whitesmoke;
+}
+
+.events button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: .75rem;
+    font-weight: 300;
+    border: none;
+    background-color: rgb(245, 225, 12);
+    border-radius: .2rem;
+}
+
+.events button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 .3rem white;
+}
+
+.events button:active {
+    height: 92%;
+    width: 95%;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 664px) {
+    .events {
+        max-width: 100%;
+    }
+
+    .events .container {
+        padding: 1rem;
+    }
+
+    .events h4 {
+        display: none;
+    }
+}
+
+/* Footer Section */
+footer {
+    margin-top: 10rem;
+    background-color: rgb(40, 40, 40);
+    padding-top: 1.2rem;
+}
+
+footer #mf {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+#phone {
+    margin-top: 0.3rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+}

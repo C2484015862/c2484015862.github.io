@@ -1,0 +1,63 @@
+/* Page Hero Modification */
+@media only screen and (max-width: 940px) {
+    .page-hero {
+        justify-content: center;
+    }  
+
+    .page-hero .about {
+        margin: 0;
+    }
+
+    .page-hero {
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 664px) {
+    .page-hero {
+        height: 22.5rem;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero .content {
+        padding: 1rem 2rem 1.5rem 2rem;
+    }
+
+    .page-hero button {
+        padding: 1rem 2rem;
+    }
+
+    .page-hero span {
+        display: none;
+    }
+}
+
+/* Equipment Modification */
+@media only screen and (max-width: 940px) {
+    .equipments {
+        padding: 0;
+        max-width: 50rem;
+    }
+
+    .equipments img {
+        max-height: 11rem;
+        max-width: 16rem;
+    }
+
+    .equipments h2 {
+        padding-top: 1.5rem;
+    }
+
+    .equipments button {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 664px) {
+    .equipments {
+        max-width: 32rem;
+    }
+}
